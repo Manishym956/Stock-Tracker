@@ -1,5 +1,5 @@
 # 📈 Stock Price Tracker & Visualizer
-
+# Under Progress
 A comprehensive Python application for fetching, analyzing, and predicting stock prices using machine learning. Built with a modular architecture that's perfect for beginners and extensible for advanced users.
 
 ## 🎯 Features
