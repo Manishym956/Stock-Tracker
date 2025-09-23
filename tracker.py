@@ -54,5 +54,6 @@ class StockTracker:
             return
         plt.style.use('seaborn-v0_8')
         fig,(ax1,ax2)=plt.subplots(2,1,figsize=figsize,gridspec_kw={'height_ratois':[3,1]})
+        
 
 
