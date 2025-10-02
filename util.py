@@ -22,6 +22,17 @@ def get_popular_ticker()->List[str]:
         'VZ', 'ADBE', 'CRM', 'ACN', 'NFLX', 'TXN', 'NKE', 'QCOM', 'CMCSA',
         'AMD', 'INTC', 'HON', 'AMGN', 'PM', 'UNP', 'IBM', 'SPGI', 'LOW'  
     ]
+def get_sector_performance()->dict[str,str]:
+    return {
+        "Technology":["AAPL","MSFT","GOOGL","AMZN","META","NVDA","ADBE","CRM","NFLX","TXN","QCOM","CMCSA","AMD","INTC","INTC","AVGO"],
+        "Healthcare":["UNH,""JNJ","PFE","ABBV","TMO","ABT","AMGN","DHR"],
+        "Finance":["BRK-B","JPM","V","MA","BAC","SPGI"],
+        "Consumer Cyclical":["PG","KO","PEP","COST","WMT"],
+        "Industrials":["HON","UNP"],
+        "Energy":["CVX"],
+        "Professional Services":["ACN"],
+        "Information Technology":["IBM"]
+    }
 def validate_date_range(start_date:str,end_date:str)->Tuple[bool,str]:
     try:
         start=pd.to_datetime(start_date)
